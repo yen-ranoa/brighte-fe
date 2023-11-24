@@ -4,11 +4,13 @@ import FormDetails from './form/Form';
 
 export const ReferralForm = () => {
 	return (
-		<Paper p='xl' withBorder shadow='sm'>
-			<Title>Referral Builder</Title>
+		<Paper p='xl'>
+			<Box p='lg'>
+				<Title>Referral Builder</Title>
 
-			<Box my='lg'>
-				<FormDetails />
+				<Box my='lg'>
+					<FormDetails />
+				</Box>
 			</Box>
 		</Paper>
 	);
