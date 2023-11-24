@@ -1,5 +1,5 @@
 export interface ReferralForm {
-	firstName: string;
+	givenName: string;
 	surname: string;
 	email: string;
 	phone: string;

@@ -24,7 +24,7 @@ export const FormDetails = () => {
 	const countries = useMemo(() => countryList().getLabels(), []);
 	const form = useForm({
 		initialValues: {
-			firstName: '',
+			givenName: '',
 			surname: '',
 			email: '',
 			phone: '',
@@ -37,7 +37,7 @@ export const FormDetails = () => {
 			avatar: '',
 		} as ReferralForm,
 		validate: {
-			firstName: isNotEmpty('Given name is required'),
+			givenName: isNotEmpty('Given name is required'),
 			surname: isNotEmpty('Surname is required'),
 			email: isEmail('Invalid email'),
 			phone: isNotEmpty('Phone number is required'),
@@ -104,7 +104,7 @@ export const FormDetails = () => {
 			<Divider my='sm' />
 			<Grid grow>
 				<Grid.Col {...gridColProps}>
-					<TextInput label={<Label label='Given Name' />} {...form.getInputProps('firstName')} required />
+					<TextInput label={<Label label='Given Name' />} {...form.getInputProps('givenName')} required />
 				</Grid.Col>
 				<Grid.Col {...gridColProps}>
 					<TextInput label={<Label label='Surname' />} {...form.getInputProps('surname')} required />
@@ -136,7 +136,7 @@ export const FormDetails = () => {
 					<TextInput label={<Label label='State' />} {...form.getInputProps('addrState')} required />
 				</Grid.Col>
 				<Grid.Col {...gridColProps}>
-					<TextInput label={<Label label='Postcode' />} {...form.getInputProps('addrPostCode')} />
+					<TextInput label={<Label label='Postcode' />} {...form.getInputProps('addrPostCode')} required />
 				</Grid.Col>
 				<Grid.Col {...gridColProps}>
 					<Select
