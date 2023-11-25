@@ -110,6 +110,7 @@ export const ReferralTable = () => {
 					<Table.Tbody style={{ overflowY: 'auto' }}>
 						{rows}
 						{rows}
+						{rows}
 					</Table.Tbody>
 				</Table>
 			</Table.ScrollContainer>

@@ -2,7 +2,7 @@ import { MantineProvider } from '@mantine/core';
 import '@mantine/core/styles.css';
 import React from 'react';
 import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom';
-import './App.css';
+import './App.scss';
 import ReferralPage from './pages';
 
 const router = createBrowserRouter([
