@@ -1,6 +1,6 @@
 import { Box, Paper, Title } from '@mantine/core';
 import React from 'react';
-import FormDetails from './form/Form';
+import FormDetails from './components/Form';
 
 export const ReferralForm = () => {
 	return (
