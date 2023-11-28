@@ -249,7 +249,7 @@ export const FormDetails = () => {
 							/>
 						</Tooltip>
 
-						<Image h={150} w={130} src={file} radius='xl' />
+						<Image h={130} w={130} src={file} radius='xl' />
 					</Paper>
 				</Center>
 			)}

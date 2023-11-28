@@ -1,4 +1,4 @@
-import { ActionIcon, Box, Tooltip } from '@mantine/core';
+import { ActionIcon, Box, Paper, Tooltip } from '@mantine/core';
 import { IconEdit } from '@tabler/icons-react';
 import React, { useContext, useMemo } from 'react';
 import CommonTable from '../../../components/CommonTable';
@@ -37,18 +37,20 @@ export const ReferralTable = ({ data = [], isLoading = false }: { data: Referral
 			phone: 'Phone',
 			actions: 'Actions',
 		}),
-		[data]
+		[]
 	);
 
 	return (
 		<Box p='lg'>
-			<CommonTable
-				data={{
-					columnHeaders: headers,
-					rows: rows,
-				}}
-				isLoading={false}
-			/>
+			<Paper p='md'>
+				<CommonTable
+					data={{
+						columnHeaders: headers,
+						rows: rows,
+					}}
+					isLoading={false}
+				/>
+			</Paper>
 		</Box>
 	);
 };

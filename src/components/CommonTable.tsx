@@ -51,7 +51,7 @@ export const CommonTable = ({ data, isLoading = false }: { data: TableProps; isL
 
 	return (
 		<Table.ScrollContainer minWidth={300}>
-			<Table stickyHeader bg='white' horizontalSpacing='md' highlightOnHover>
+			<Table stickyHeader bg='white' horizontalSpacing='md' highlightOnHover display='block' h='600'>
 				{headers}
 				{isLoading ? <LoadingOverlay visible /> : rows}
 			</Table>

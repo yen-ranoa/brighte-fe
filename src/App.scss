@@ -11,6 +11,9 @@
 			.referral-list {
 				max-height: 100%;
 				overflow-y: auto;
+				thead {
+					z-index: 3;
+				}
 			}
 		}
 	}
