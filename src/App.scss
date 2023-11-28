@@ -1,0 +1,17 @@
+.mantine-Container-root {
+	height: 100vh;
+
+	.referral-container {
+		height: 100%;
+		overflow-y: auto;
+
+		.mantine-Grid-inner {
+			height: 100%;
+
+			.referral-list {
+				max-height: 100%;
+				overflow-y: auto;
+			}
+		}
+	}
+}
