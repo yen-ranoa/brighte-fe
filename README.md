@@ -20,7 +20,7 @@ You may also see any lint errors in the console.
 
 ## How to run with the Referral App be repository
 
-Make sure that the `bright-be` repository is running first.
+Make sure that the `referral-be` repository is running first.
 
 ## Notes on this project
 
